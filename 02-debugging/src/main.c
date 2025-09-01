@@ -7,7 +7,10 @@
  */
 int strlen(char *str) {
     //Implement me!
-    return 0;
+    int n = 0;
+    while (str[n] != '\0') 
+	n++;
+    return n;
 }
 
 /**
@@ -15,7 +18,7 @@ int strlen(char *str) {
  * @param str pointer to the string to print
  */
 void puts(char *str) {
-    if (str) {
+    if (!str) {
         printf("NULL pointer!\n");
         return;
     }

@@ -1,0 +1,168 @@
+23:40:20 $ git clone git@github.com:CSUS-CS-CPE159/phase0-yaminigonuguntla.git
+Cloning into 'phase0-yaminigon'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.116.3' to the list of known hosts.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+![spede] ~ 
+23:41:59 $ git clone git@github.com:CSUS-CS-CPE159/phase0-yaminigonuguntla.git
+Cloning into 'phase0-yaminigonuguntla'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 0), reused 8 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
+-[spede] ~ 
+23:44:36 $ ls
+bin  Desktop  Documents  Downloads  phase0-yaminigonuguntla  Pictures
+-[spede] ~ 
+23:53:15 $ cd ~/phase0-yaminigonuguntla/01-hello-world
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world (main=)
+23:53:55 $ make
+Done linking "build/MyOS.dli" (with GDB enabled) at 1m.
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:54:13 $ ls
+build  Makefile  src
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:55:03 $ cd..
+cd..: command not found
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:55:11 $ ls
+build  Makefile  src
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:55:28 $ cd ~/phase0-yaminigonuguntla
+-[spede] ~/phase0-yaminigonuguntla {main %=}
+23:55:44 $ ls
+01-hello-world	02-debugging  README.md
+-[spede] ~/phase0-yaminigonuguntla {main %=}
+23:55:50 $ cd ~/phase0
+-[spede] ~/phase0-yaminigonuguntla {main %=}
+23:56:14 $ cd ~/phase0ls
+01-hello-world	02-debugging  README.md
+-[spede] ~/phase0-yaminigonuguntla {main %=}
+23:56:24 $ cd ~/phase0-yaminigonuguntla/01-hello-world
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:56:41 $ make
+Done linking "build/MyOS.dli" (with GDB enabled) at 1m.
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main %=}
+23:56:52 $ nano Makefile
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:07:49 $ make clean
+Removing compiled objects and images
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *=}
+00:08:02 $ make
+Done linking "build/MynewOS.dli" (with GDB enabled) at 1m.
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:08:09 $ spede-target
+Launching SPEDE target to run in the background
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:11:41 $ ls build/MynewOS.dli
+build/MynewOS.dli
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:13:16 $ spede-target
+Launching SPEDE target to run in the background
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:15:08 $ spede-target -q
+The SPEDE Target has quit. Exiting...
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:19:17 $ spede-target
+Launching SPEDE target to run in the background
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:21:50 $ make
+Done linking "build/MynewOS.dli" (with GDB enabled) at 1m.
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:21:59 $ spede-run
+The SPEDE Target will be reset, are you sure? (y/n) 
+Exiting...
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:22:35 $ y
+y: command not found
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:22:43 $ 
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:22:44 $ speedde-run
+speedde-run: command not found
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:23:12 $ spede-run
+The SPEDE Target will be reset, are you sure? (y/n) y
+Resetting the SPEDE Target...
+Downloading image 'build/MynewOS.dli' to SPEDE Target via /dev/pts/2...
+File type is 'ELF'
+Total blocks to download:  0x8a  (128 bytes each)
+
+Load Successful ; Code loaded at 0x0x101000 (1969 bytes/sec)
+Executing the image 'build/MynewOS.dli' on the SPEDE Target
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:23:46 $ ^C
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:25:04 $ spede-run -d
+The SPEDE Target will be reset, are you sure? (y/n) y
+Resetting the SPEDE Target...
+Downloading image 'build/MynewOS.dli' to SPEDE Target via /dev/pts/2...
+File type is 'ELF'
+Total blocks to download:  0x8a  (128 bytes each)
+
+Load Successful ; Code loaded at 0x0x101000 (1969 bytes/sec)
+Executing the image 'build/MynewOS.dli' on the SPEDE Target with GDB Enabled
+Launching GDB...
+Reading symbols from build/MynewOS.dli...
+Expanding full symbols from build/MynewOS.dli...
+Remote debugging using /dev/pts/2
+warning: unrecognized item "S05" in "qSupported" response
+continue             
+
+^Z
+[1]+  Stopped                 spede-run -d
+![spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:34:59 $ spede-run -d
+The SPEDE Target will be reset, are you sure? (y/n) y
+Resetting the SPEDE Target...
+Downloading image 'build/MynewOS.dli' to SPEDE Target via /dev/pts/2...
+File type is 'ELF'
+Total blocks to download:  0x8a  (128 bytes each)
+
+Load Successful ; Code loaded at 0x0x101000 (1108 bytes/sec)
+Executing the image 'build/MynewOS.dli' on the SPEDE Target with GDB Enabled
+Launching GDB...
+Reading symbols from build/MynewOS.dli...
+Expanding full symbols from build/MynewOS.dli...
+Remote debugging using /dev/pts/2
+0x0010255d in breakpoint ()
+Temporary breakpoint 1 at 0x101183: file src/hello.c, line 5.
+
+Temporary breakpoint 1, main () at src/hello.c:5
+5	    printf("Hello, world!\n");
+SPEDE GDB$ continue
+Continuing.
+Hello, world!
+Welcome to MynewOS!
+[Inferior 1 (Remote target) exited normally]
+SPEDE GDB$ quit
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:38:03 $ spede-run -d
+The SPEDE Target will be reset, are you sure? (y/n) y
+Resetting the SPEDE Target...
+Downloading image 'build/MynewOS.dli' to SPEDE Target via /dev/pts/2...
+File type is 'ELF'
+Total blocks to download:  0x8a  (128 bytes each)
+
+Load Successful ; Code loaded at 0x0x101000 (1477 bytes/sec)
+Executing the image 'build/MynewOS.dli' on the SPEDE Target with GDB Enabled
+Launching GDB...
+Reading symbols from build/MynewOS.dli...
+Expanding full symbols from build/MynewOS.dli...
+Remote debugging using /dev/pts/2
+0x0010255d in breakpoint ()
+Temporary breakpoint 1 at 0x101183: file src/hello.c, line 5.
+
+Temporary breakpoint 1, main () at src/hello.c:5
+5	    printf("Hello, world!\n");
+SPEDE GDB$ run
+Hello, world!
+Welcome to MynewOS!
+[Inferior 1 (Remote target) exited normally]
+SPEDE GDB$ quit
+-[spede] ~/phase0-yaminigonuguntla/01-hello-world {main *%=}
+00:39:36 $ 
